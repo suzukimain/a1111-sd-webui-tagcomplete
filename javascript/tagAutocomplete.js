@@ -1254,9 +1254,9 @@ async function autocomplete(textArea, prompt, fixedTag = null) {
         // Add final results
         allTags.filter(fil).forEach(t => {
             let result = new AutocompleteResult(t[0].trim(), ResultType.tag)
-            result.category = t[1];
-            result.count = t[2];
-            result.aliases = t[3];
+            result.count = t[1];
+            result.category = 0;
+            result.aliases = "";
             results.push(result);
         });
 
