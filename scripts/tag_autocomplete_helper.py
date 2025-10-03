@@ -1,15 +1,3 @@
-"""
-Cleaned and reorganized single-file version of the Tag Autocomplete helper.
-- Duplicate imports removed and grouped
-- Top-level variables resolved in a robust order
-- Functions and classes ordered so runtime top-level calls happen after definitions
-- DB transaction context manager fixed (conn initialised to None)
-- write_to_temp_file accepts list or string and ensures parent exists
-- Defensive guards added around optional paths/objects
-
-This file is intended to replace the merged mess; keep it under your extension folder and test in your webui environment.
-"""
-
 from __future__ import annotations
 
 # Standard library
